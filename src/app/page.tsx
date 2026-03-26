@@ -1,4 +1,4 @@
-import { Banner, About, Wines, Tasting, Contact, Footer } from "@/components";
+import { Banner, About, Wines, Tasting, Reviews, Contact, Footer } from "@/components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <About />
       <Wines />
       <Tasting />
+      <Reviews />
       <Contact />
       <Footer />
     </main>

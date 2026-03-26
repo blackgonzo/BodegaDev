@@ -2,5 +2,6 @@ export { default as Banner } from "./Banner/Banner";
 export { default as About } from "./About/About";
 export { default as Wines } from "./Wines/Wines";
 export { default as Tasting } from "./Tasting/Tasting";
+export { default as Reviews } from "./Reviews/Reviews";
 export { default as Contact } from "./Contact/Contact";
 export { default as Footer } from "./Footer/Footer";
