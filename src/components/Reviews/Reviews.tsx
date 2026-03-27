@@ -76,9 +76,9 @@ const reviews = [
   }
 ];
 
-function WineGlass({ className }: { className?: string }) {
+function WineGlass({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
-    <svg className={className} viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} style={style} viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M30 0H70V10C70 15 65 20 50 20C35 20 30 15 30 10V0Z" fill="#78350f" opacity="0.3"/>
       <path d="M25 20C25 20 20 35 20 60C20 85 30 100 50 100C70 100 80 85 80 60C80 35 75 20 75 20" stroke="#78350f" strokeWidth="2" fill="none"/>
       <path d="M35 20H65" stroke="#78350f" strokeWidth="2"/>
