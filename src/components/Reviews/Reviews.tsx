@@ -121,7 +121,7 @@ export default function Reviews() {
     <section 
       ref={sectionRef}
       id="opiniones" 
-      className="relative py-32 px-8 bg-stone-950 overflow-hidden"
+      className="relative py-20 px-4 md:px-8 bg-stone-950 overflow-hidden"
     >
       <ParallaxSection />
       
@@ -142,11 +142,11 @@ export default function Reviews() {
           <span className="inline-block text-amber-400 tracking-[0.5em] uppercase text-sm">
             Lo que dicen nuestros clientes
           </span>
-          <h2 className="font-serif text-7xl md:text-9xl mt-6 text-white leading-tight">
+          <h2 className="font-serif text-5xl md:text-9xl mt-6 text-white leading-tight">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-red-500 to-amber-600">
               4.4
             </span>
-            <span className="text-white/30 text-5xl md:text-7xl ml-4">★</span>
+            <span className="text-white/30 text-3xl md:text-7xl ml-2 md:ml-4">★</span>
           </h2>
           <p className="text-stone-400 mt-6 text-xl max-w-2xl mx-auto">
             Más de 170 historias compartidas. Cada opiniones es una copa de experiencia vivida.
@@ -163,7 +163,7 @@ export default function Reviews() {
                   : 'opacity-0 scale-95 z-0'
               }`}
             >
-              <div className="bg-gradient-to-br from-stone-900 to-stone-800 rounded-3xl p-12 border border-stone-700/50 relative overflow-hidden">
+              <div className="bg-gradient-to-br from-stone-900 to-stone-800 rounded-3xl p-6 md:p-12 border border-stone-700/50 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl" />
                 
                 <div className="relative z-10">
@@ -178,11 +178,11 @@ export default function Reviews() {
                     </div>
                   </div>
                   
-                  <div className="flex items-start gap-8">
+                  <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
                     <WineGlass className="w-24 h-32 text-amber-600/40 flex-shrink-0 hidden md:block" />
                     
                     <div className="flex-1">
-                      <p className="text-2xl md:text-3xl text-white font-serif leading-relaxed italic">
+                      <p className="text-lg md:text-3xl text-white font-serif leading-relaxed italic">
                         &ldquo;{review.text}&rdquo;
                       </p>
                       
@@ -217,7 +217,7 @@ export default function Reviews() {
           </div>
         </div>
 
-        <div className={`grid grid-cols-3 gap-8 text-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 text-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           {[
             { value: "170+", label: "Opiniones" },
             { value: "4.4", label: "Estrellas" },
@@ -227,7 +227,7 @@ export default function Reviews() {
               <span className="block text-4xl md:text-5xl font-serif text-amber-500">{stat.value}</span>
               <span className="text-stone-500 text-sm uppercase tracking-widest">{stat.label}</span>
               {i < 2 && (
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 h-12 w-px bg-stone-800" />
+                <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-12 w-px bg-stone-800" />
               )}
             </div>
           ))}
