@@ -1,21 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafaf9;
-  --foreground: #1c1917;
+  /* Fondos */
+  --negro-profundo: #0A0A0A;
+  --negro-suave: #0D0D0D;
+  --negro-medio: #0F0F0F;
+  --negro-carbon: #111111;
+  --vino-negro: #1A0A10;
+  
+  /* UI / Acento */
+  --dorado-cobre: #C9974A;
+  --rosa-vino: #C9897A;
+  --rosa-palido: #D4929A;
+  --verde-salvia: #8FA882;
+  
+  /* Menu externo */
+  --negro-calido: #1A1208;
+  --burdeos-oscuro: #2A0808;
+  --dorado-arena: #EAC891;
+  --whatsapp: #25D366;
+  
+  /* Shared / Base */
+  --negro-puro: #0A0A0A;
+  --negro-gris: #1A1A1A;
+  --vino-oscuro: #5C2530;
+  --burdeos: #722F37;
+  --vino-medio: #8B3A45;
+  --olive-oscuro: #4A6741;
+  --sage: #5E7E53;
+  
+  --background: var(--negro-profundo);
+  --foreground: #fafaf9;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-serif: var(--font-playfair), Georgia, serif;
-  --font-sans: var(--font-lato), system-ui, sans-serif;
+  --font-display: var(--font-display), Georgia, serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+  --font-script: var(--font-script), cursive;
+  
+  /* Fondos */
+  --color-negro-profundo: #0A0A0A;
+  --color-negro-suave: #0D0D0D;
+  --color-negro-medio: #0F0F0F;
+  --color-negro-carbon: #111111;
+  --color-vino-negro: #1A0A10;
+  
+  /* Acento */
+  --color-dorado-cobre: #C9974A;
+  --color-rosa-vino: #C9897A;
+  --color-rosa-palido: #D4929A;
+  --color-verde-salvia: #8FA882;
+  
+  /* Menu externo */
+  --color-negro-calido: #1A1208;
+  --color-burdeos-oscuro: #2A0808;
+  --color-dorado-arena: #EAC891;
+  --color-whatsapp: #25D366;
+  
+  /* Shared */
+  --color-negro-puro: #0A0A0A;
+  --color-negro-gris: #1A1A1A;
+  --color-vino-oscuro: #5C2530;
+  --color-burdeos: #722F37;
+  --color-vino-medio: #8B3A45;
+  --color-olive-oscuro: #4A6741;
+  --color-sage: #5E7E53;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
 }
 
 html {
@@ -23,10 +81,16 @@ html {
 }
 
 @layer utilities {
-  .font-serif {
-    font-family: var(--font-playfair), Georgia, serif;
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
   }
-  .font-sans {
-    font-family: var(--font-lato), system-ui, sans-serif;
+  .font-serif {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+  .font-body {
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+  .font-script {
+    font-family: var(--font-script), cursive;
   }
 }

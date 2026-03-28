@@ -1,4 +1,7 @@
 export { default as Banner } from "./Banner/Banner";
+export { default as Navigation } from "./Navigation/Navigation";
+export { default as FloatingButton } from "./FloatingButton/FloatingButton";
+export { default as OurStory } from "./OurStory/OurStory";
 export { default as About } from "./About/About";
 export { default as Wines } from "./Wines/Wines";
 export { default as Tasting } from "./Tasting/Tasting";

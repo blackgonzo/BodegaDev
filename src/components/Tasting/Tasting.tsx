@@ -28,7 +28,7 @@ const experiences = [
     title: "Cata en Familia",
     duration: "2 horas",
     description: "Actividad para toda la familia.",
-    image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?w=800&q=80",
     includes: ["Vinos y mosto", "Juego de pistas", "Merienda"],
     price: "65€",
   },
@@ -40,14 +40,14 @@ export default function Tasting() {
   return (
     <section 
       ref={ref}
-      id="experiencias" 
-      className="relative py-16 md:py-24 px-4 md:px-8 bg-black overflow-x-hidden"
+      id="catas" 
+      className="relative py-16 md:py-24 px-4 md:px-8 bg-[#2A0808] overflow-x-hidden"
     >
       <div className="max-w-md md:max-w-4xl lg:max-w-6xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
-          <span className="text-amber-500 text-xs md:text-sm tracking-widest uppercase">Vive la Experiencia</span>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white mt-2 md:mt-4">
-            Catas <span className="text-amber-500">Guiadas</span>
+          <span className="text-[#C9974A] text-xs md:text-sm tracking-widest uppercase">Vive la Experiencia</span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-white mt-2 md:mt-4">
+            Catas <span className="text-[#C9974A]">Guiadas</span>
           </h2>
         </div>
 
@@ -55,8 +55,8 @@ export default function Tasting() {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className={`relative bg-stone-900 rounded-xl overflow-hidden border border-stone-800 ${
-                exp.featured ? 'ring-2 ring-amber-500' : ''
+              className={`relative bg-[#0A0A0A] rounded-xl overflow-hidden border border-[#2A2A2A] ${
+                exp.featured ? 'ring-2 ring-[#C9974A]' : ''
               }`}
             >
               <div className="relative h-56 md:h-64 lg:h-72 rounded-xl overflow-hidden">
@@ -64,37 +64,38 @@ export default function Tasting() {
                   src={exp.image}
                   alt={exp.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/30 to-transparent" />
                 {exp.featured && (
-                  <div className="absolute top-3 right-3 bg-amber-500 text-black text-xs font-bold uppercase px-3 py-1">
+                  <div className="absolute top-3 right-3 bg-[#C9974A] text-[#0A0A0A] text-xs font-bold uppercase px-3 py-1">
                     ✦ Popular
                   </div>
                 )}
                 <div className="absolute bottom-4 left-4">
-                  <span className="bg-black/60 text-white text-xs px-3 py-1">{exp.duration}</span>
+                  <span className="bg-[#0A0A0A]/60 text-white text-xs px-3 py-1">{exp.duration}</span>
                 </div>
               </div>
 
               <div className="p-6 md:p-8">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="font-serif text-xl md:text-2xl lg:text-3xl text-white">{exp.title}</h3>
-                  <span className="text-amber-500 text-xl md:text-2xl font-serif">{exp.price}</span>
+                  <h3 className="font-display text-xl md:text-2xl lg:text-3xl text-white">{exp.title}</h3>
+                  <span className="text-[#C9974A] text-xl md:text-2xl font-display">{exp.price}</span>
                 </div>
                 
-                <p className="text-stone-400 text-sm md:text-base mb-4">{exp.description}</p>
+                <p className="text-[#A0A0A0] text-sm md:text-base mb-4">{exp.description}</p>
                 
                 <ul className="space-y-2 md:space-y-3 mb-6">
                   {exp.includes.map((item, i) => (
-                    <li key={i} className="flex items-center gap-2 text-stone-500 text-xs md:text-sm">
-                      <span className="w-1.5 h-1.5 bg-amber-500 rounded-full" />
+                    <li key={i} className="flex items-center gap-2 text-[#666666] text-xs md:text-sm">
+                      <span className="w-1.5 h-1.5 bg-[#C9974A] rounded-full" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 
-                <button className="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 md:py-4 text-xs md:text-sm tracking-wider uppercase">
+                <button className="w-full bg-[#C9974A] hover:bg-[#B8863B] text-white py-3 md:py-4 text-xs md:text-sm tracking-wider uppercase">
                   Reservar
                 </button>
               </div>

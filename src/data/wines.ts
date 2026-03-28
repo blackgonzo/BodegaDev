@@ -18,7 +18,7 @@ export const wines: Wine[] = [
     grape: "Tempranillo",
     aging: "36 meses en barrica",
     description: "Un vino excepcional con notas de fruta negra madura, cacao y especias.",
-    image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const wines: Wine[] = [
     type: "Blanco",
     grape: "Chardonnay",
     aging: "6 meses en roble",
-    description: "Frescor y elegancia con notas cítricas y矿物.",
+    description: "Frescor y elegancia con notas cítricas y minerales.",
     image: "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=600&q=80",
   },
   {
@@ -48,7 +48,7 @@ export const wines: Wine[] = [
     grape: "Garnacha",
     aging: "3 meses en contacto",
     description: "Delicado y aromático con notas de fresa y rosa.",
-    image: "https://images.unsplash.com/photo-1558981852-426c6c22a060?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1559563362-c667ba5f5480?w=600&q=80",
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const wines: Wine[] = [
     grape: "Macabeo",
     aging: "24 meses en rima",
     description: "Burbujas finas y persistentes con bouquet complejo.",
-    image: "https://images.unsplash.com/photo-1609592806596-4435da1122dc?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=600&q=80",
   },
   {
     id: 6,
@@ -68,6 +68,6 @@ export const wines: Wine[] = [
     grape: "Moscatel",
     aging: "18 meses en barrica",
     description: "Vino dulce natural con notas de miel y albaricoque.",
-    image: "https://images.unsplash.com/photo-1585553616435-2dc0a54e271d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=600&q=80",
   },
 ];
